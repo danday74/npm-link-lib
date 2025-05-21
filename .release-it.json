@@ -1,0 +1,13 @@
+{
+  "$schema": "https://unpkg.com/release-it/schema/release-it.json",
+  "hooks": {
+    "before:init": "npm run build"
+  },
+  "github": {
+    "release": true
+  },
+  "npm": {
+    "publish": true,
+    "publishPath": "dist/my-npm-link-lib"
+  }
+}
