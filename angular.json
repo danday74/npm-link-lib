@@ -2,7 +2,51 @@
   "$schema": "./node_modules/@angular/cli/lib/config/schema.json",
   "version": 1,
   "newProjectRoot": "projects",
-  "projects": {},
+  "projects": {
+    "my-npm-link-lib": {
+      "projectType": "library",
+      "root": "projects/my-npm-link-lib",
+      "sourceRoot": "projects/my-npm-link-lib/src",
+      "prefix": "lib",
+      "architect": {
+        "build": {
+          "builder": "@angular-devkit/build-angular:ng-packagr",
+          "options": {
+            "project": "projects/my-npm-link-lib/ng-package.json"
+          },
+          "configurations": {
+            "production": {
+              "tsConfig": "projects/my-npm-link-lib/tsconfig.lib.prod.json"
+            },
+            "development": {
+              "tsConfig": "projects/my-npm-link-lib/tsconfig.lib.json"
+            }
+          },
+          "defaultConfiguration": "production"
+        },
+        "test": {
+          "builder": "@angular-devkit/build-angular:karma",
+          "options": {
+            "tsConfig": "projects/my-npm-link-lib/tsconfig.spec.json",
+            "polyfills": [
+              "zone.js",
+              "zone.js/testing"
+            ]
+          }
+        },
+        "lint": {
+          "builder": "@angular-eslint/builder:lint",
+          "options": {
+            "lintFilePatterns": [
+              "projects/my-npm-link-lib/**/*.ts",
+              "projects/my-npm-link-lib/**/*.html"
+            ],
+            "eslintConfig": "projects/my-npm-link-lib/eslint.config.js"
+          }
+        }
+      }
+    }
+  },
   "cli": {
     "schematicCollections": [
       "angular-eslint"
