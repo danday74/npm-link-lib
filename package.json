@@ -8,7 +8,7 @@
     "watch": "ng build --watch --configuration development",
     "test": "ng test",
     "lint": "ng lint",
-    "release": "release-it"
+    "release": "release-it --verbose"
   },
   "private": true,
   "dependencies": {
