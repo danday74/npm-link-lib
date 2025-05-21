@@ -7,7 +7,7 @@
     "tag": true,
     "commit": true,
     "push": true,
-    "commitMessage": "chore(release): release version ${version}"
+    "commitMessage": "chore(${name}): release version ${version}"
   },
   "npm": {
     "publish": true,
