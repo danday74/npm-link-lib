@@ -1,6 +1,10 @@
 {
   "$schema": "https://unpkg.com/release-it/schema/release-it.json",
   "github": {
-    "release": true
+    "release": false
+  },
+  "npm": {
+    "publish": true,
+    "packagePath": "../../dist/my-npm-link-lib/package.json"
   }
 }
