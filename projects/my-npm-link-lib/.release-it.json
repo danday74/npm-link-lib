@@ -3,6 +3,12 @@
   "github": {
     "release": false
   },
+  "git": {
+    "tag": true,
+    "commit": true,
+    "push": true,
+    "commitMessage": "chore(release): release version ${version}"
+  },
   "npm": {
     "publish": true,
     "packagePath": "../../dist/my-npm-link-lib/package.json"
