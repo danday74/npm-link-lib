@@ -8,7 +8,7 @@
     "watch": "ng build --watch --configuration development",
     "test": "ng test",
     "lint": "ng lint",
-    "release": "cd projects/my-npm-link-lib && npm run release"
+    "release": "ng build my-lib && cd projects/my-npm-link-lib && npm run release"
   },
   "private": true,
   "dependencies": {
