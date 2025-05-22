@@ -1,7 +1,7 @@
 {
   "$schema": "https://unpkg.com/release-it/schema/release-it.json",
   "hooks": {
-    "before:init": "ng build my-npm-link-lib"
+    "before:release": "ng build my-npm-link-lib"
   },
   "github": {
     "release": false
