@@ -9,7 +9,7 @@
     "test": "ng test",
     "lint": "ng lint",
     "publish": "npm run release",
-    "release": "ng build my-npm-link-lib && cd projects/my-npm-link-lib && npm run release"
+    "release": "cd projects/my-npm-link-lib && npm run release"
   },
   "private": true,
   "dependencies": {
