@@ -15,7 +15,6 @@
   "npm": {
     "publish": true,
     "publishPath": "../../dist/my-npm-link-lib",
-    "packagePath": "../../dist/my-npm-link-lib/package.json",
     "publishArgs": ["--access", "public"]
   }
 }
