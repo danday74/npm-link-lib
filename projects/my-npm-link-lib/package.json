@@ -10,7 +10,7 @@
   },
   "sideEffects": false,
   "scripts": {
-    "release": "release-it"
+    "release": "release-it patch"
   },
   "devDependencies": {
     "release-it": "^19.0.2"
