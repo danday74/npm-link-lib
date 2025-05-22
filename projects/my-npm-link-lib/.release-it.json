@@ -11,6 +11,7 @@
   },
   "npm": {
     "publish": true,
-    "packagePath": "../../dist/my-npm-link-lib/package.json"
+    "packagePath": "../../dist/my-npm-link-lib/package.json",
+    "publishArgs": ["--access", "public"]
   }
 }
