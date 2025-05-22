@@ -8,6 +8,7 @@
     "watch": "ng build --watch --configuration development",
     "test": "ng test",
     "lint": "ng lint",
+    "publish": "npm run release",
     "release": "ng build my-npm-link-lib && cd projects/my-npm-link-lib && npm run release"
   },
   "private": true,
